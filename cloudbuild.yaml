@@ -1,4 +1,7 @@
 steps:
 - name: "gcr.io/cloud-builders/gcloud"
   args: ["app", "deploy"]
+
+- name: "firebase"
+  args: [deploy"]
 timeout: "1600s"
