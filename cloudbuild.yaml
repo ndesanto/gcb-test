@@ -1,6 +1,6 @@
 steps:
 - name: 'gcr.io/cloud-builders/npm:node-10.10.0'
-  args: [ 'install' ]
+  args: [ '-g', 'install' ]
 - name: 'gcr.io/deploy-fb/firebase'
   args: [ 'deploy']
 - name: "gcr.io/cloud-builders/gcloud"
