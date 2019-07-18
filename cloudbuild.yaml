@@ -1,6 +1,6 @@
 steps:
 - name: 'gcr.io/deploy-fb/firebase'
-  args: [ 'deploy']
+  args: [ 'deploy', '--project deploy-fb', ]
 - name: "gcr.io/cloud-builders/gcloud"
   args: ["app", "deploy"]
 timeout: "1600s"
